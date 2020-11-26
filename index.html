@@ -12,7 +12,7 @@
 		text-align: left;
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		align-items: left;
 	}
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
@@ -25,7 +25,7 @@ body, html {
 .bgimg-1 {
   background-position: center;
   background-size: cover;
-  background-image: url(Group5.png);
+  background-image: url('img/Group5.png');
   min-height: 100%;
 }
 
@@ -117,7 +117,11 @@ body, html {
       <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
     </div>
     <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="graphic.jpg" alt="Buildings" width="700" height="394">
+      <video width="700" height="394" controls class="w3-image w3-round-large">
+	<source src="video/fantastiqo.mp4" type="video/mp4">
+	<source src="movie.ogg" type="video/ogg">
+	Your browser does not support the video tag.
+	</video>
     </div>
   </div>
 </div>
@@ -129,7 +133,7 @@ body, html {
   <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
-        <img src="c5.jpg" alt="Preeti" style="width:100%">
+        <img src="img/c5.jpg" alt="Preeti" style="width:100%">
         <div class="w3-container">
           <h3>Shubham</h3>
           <p class="w3-opacity">Founder</p>
@@ -140,7 +144,7 @@ body, html {
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
-        <img src="c1.jpeg" alt="Harshita" style="width:100%">
+        <img src="img/c1.jpeg" alt="Harshita" style="width:100%">
         <div class="w3-container">
           <h3>Preeti</h3>
           <p class="w3-opacity">Ex Marketing Head</p>
@@ -151,7 +155,7 @@ body, html {
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
-        <img src="ishika1.jpg" alt="Mike" style="width:100%">
+        <img src="img/ishika1.jpg" alt="Mike" style="width:100%">
         <div class="w3-container">
           <h3>Ishika Narnolia</h3>
           <p class="w3-opacity"> Marketing Head</p>
@@ -162,7 +166,7 @@ body, html {
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
-        <img src="c4r.jpg" alt="Sakshi" style="width:100%">
+        <img src="img/c4r.jpg" alt="Sakshi" style="width:100%">
         <div class="w3-container">
           <h3>Sakshi Gupta</h3>
           <p class="w3-opacity">Social Media Marketing Head</p>
@@ -201,31 +205,31 @@ body, html {
 
   <div class="w3-row-padding" style="margin-top:64px box-shadow: 10px 10px grey;">
     <div class="w3-col l3 m6">
-      <img src="fan1.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Graphic Design">
+      <img src="img/fan1.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Graphic Design">
     </div>
     <div class="w3-col l3 m6">
-      <img src="fant1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
+      <img src="img/fant1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
     </div>
     <div class="w3-col l3 m6">
-      <img src="fan4r.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
+      <img src="img/fan4r.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
     </div>
     <div class="w3-col l3 m6">
-      <img src="fant.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
+      <img src="img/fant.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
     </div>
   </div>
 
   <div class="w3-row-padding w3-section">
     <div class="w3-col l3 m6">
-      <img src="fant2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
+      <img src="img/fant2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
     </div>
     <div class="w3-col l3 m6">
-      <img src="fan6r.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+      <img src="img/fan6r.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
     </div>
     <div class="w3-col l3 m6">
-      <img src="fant3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
+      <img src="img/fant3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
     </div>
     <div class="w3-col l3 m6">
-      <img src="fan9r.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
+      <img src="img/fan9r.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
     </div>
   </div>
 </div>
@@ -270,24 +274,28 @@ body, html {
 
 
 <!-- Contact Section -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
-  <h3 class="w3-center">CONTACT</h3>
-  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
-  <div>
-    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Patna , India</p>
-    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i>Phone: +91 9199592497</p>
-    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i>Email: fantastiqo64@gmail.com</p>
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6" id="contact">
+		<h3 class="w3-left">CONTACT</h3>
+		<p class="w3-left w3-large">Lets get in touch. Send us a message:</p>
+	<div>
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-left"></i> Patna , India</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-left"></i>Phone: +91 9199592497</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-left"></i>Email: fantastiqo64@gmail.com</p>
     <br>
 
     
     <!-- Image of location/map -->
     <!--<img src="map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">-->
+	</div>
+    </div>
+    <div class="w3-col m6">
+	<img class="w3-image w3-round-large" src="img/graphic.jpg" alt="Buildings" width="700" height="394">
+    </div>
   </div>
-
 </div>
 
-	
-}
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64">
